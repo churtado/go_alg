@@ -37,6 +37,8 @@ func tenexp(n float64) string {
 // It returns the result as a string
 func stradd(x string, y string) string {
 	// reverse both strings
+
+	// add and carry
 	return ""
 }
 
