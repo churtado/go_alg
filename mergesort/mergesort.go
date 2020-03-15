@@ -1,10 +1,5 @@
 package main
 
-/* to run profiling:
-go build -cpuprofile cpu.prof -memprofile mem.prof -bench .
-go run -cpuprofile cpu.prof -memprofile mem.prof -bench .
-*/
-
 import (
 	"flag"
 	"fmt"
@@ -14,7 +9,7 @@ import (
 	"runtime/pprof"
 )
 
-// go run -cpuprofile=cprof cpu.prof -memprofile=mprof mem.prof -bench .
+// go run -cpuprofile=cprof -memprofile=mprof mergesort.go
 var cpuprofile = flag.String("cpuprofile", "", "write cpu profile to `file`")
 var memprofile = flag.String("memprofile", "", "write memory profile to `file`")
 
